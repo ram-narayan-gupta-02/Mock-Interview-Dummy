@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Mock Interview</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+
+  <!-- Face API -->
+  <script src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
+
+  <!-- Custom JS -->
+  <script defer src="/static/js/app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🤖 AI Mock Interview System</h1>
+
+<div class="controls">
+  <label>Choose Role:</label>
+  <select id="roleSelect">
+    <option value="" selected disabled>Select Role</option>
+    <option>Data Scientist</option>
+    <option>Software Engineer</option>
+    <option>AI/ML Engineer</option>
+  </select>
+
+  <label>Interview Type:</label>
+  <select id="typeSelect">
+    <option value="" selected disabled>Select Type</option>
+    <option>Voice Only</option>
+    <option>Face + Voice</option>
+  </select>
+
+  <label>No. of Questions:</label>
+  <select id="questionCount">
+    <option value="" selected disabled>Select Questions</option>
+    <option value="3">3</option>
+    <option value="5">5</option>
+    <option value="10">10</option>
+  </select>
+</div>
+
+
+
+
+
+    <div class="interview-section">
+      <div id="video-container">
+        <video id="video" width="300" height="200" autoplay muted></video>
+      </div>
+
+      <div class="text-section">
+        <h2 id="question">Click “Start Interview” to begin!</h2>
+        <p id="transcript" class="transcript"></p>
+        <div id="feedback"></div>
+      </div>
+    </div>
+
+    
+
+    <div class="buttons">
+      <button id="startBtn">Start Interview</button>
+      <button id="submitBtn" style="display:none;">Submit Answer</button>
+      <button id="nextBtn" style="display:none;">Next Question</button>
+    </div>
+  </div>
+</body>
+</html>

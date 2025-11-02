@@ -1,0 +1,79 @@
+body {
+  background: #eef2f7;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  text-align: center;
+  padding: 30px;
+}
+
+.container {
+  max-width: 950px;
+  margin: auto;
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color: #0077ff;
+  margin-bottom: 25px;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+select {
+  margin: 5px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.interview-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+#video-container {
+  position: relative;
+  display: inline-block;
+}
+
+video {
+  border-radius: 10px;
+  border: 2px solid #0077ff;
+  background: #000;
+}
+
+.text-section {
+  width: 45%;
+  text-align: left;
+}
+
+.transcript {
+  background: #f3f4f6;
+  border-radius: 10px;
+  padding: 10px;
+  min-height: 100px;
+}
+
+.buttons button {
+  margin: 10px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  background: #0077ff;
+  color: white;
+  transition: 0.2s;
+}
+
+.buttons button:hover {
+  background: #005fcc;
+}
